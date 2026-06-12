@@ -1,0 +1,25 @@
+.nav-link{
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #4466f2;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #4466f2;
+    font-weight: 600;
+}
